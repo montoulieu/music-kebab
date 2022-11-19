@@ -46,7 +46,7 @@ export default function Home() {
               className="min-h-[20rem] flex items-start justify-center flex-col md:flex-row md:flex-wrap gap-5"
             >
               {pickedGenres.map((genre, index) => (
-                <GenrePicker key={genre.id} index={index} />
+                <GenrePicker key={genre.name} index={index} />
               ))}
             </ReactSortable>
           ) : (
