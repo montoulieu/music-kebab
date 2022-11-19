@@ -61,7 +61,7 @@ export default function Home() {
             </div>
           )}
         </div>
-        <footer className="mt-auto">
+        <footer className="mt-auto pt-10">
           <p className="text-xs italic text-center font-light">
             Made by{" "}
             <a
