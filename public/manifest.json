@@ -2,7 +2,13 @@
   "background_color": "black",
   "description": "A tool to generate random music genres.",
   "display": "fullscreen",
-  "icons": [],
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
   "name": "Music Kebab",
   "short_name": "Music Kebab",
   "start_url": "/"

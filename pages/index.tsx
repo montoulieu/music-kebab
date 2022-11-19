@@ -24,7 +24,10 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
+        <link rel="icon" href="/favicon.png" />
         <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
+        <link rel="shortcut icon" href="/favicon.png" />
       </Head>
       <div
         className={
