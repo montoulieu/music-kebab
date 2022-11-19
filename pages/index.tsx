@@ -25,7 +25,7 @@ export default function Home() {
       </Head>
       <div
         className={
-          "flex items-center md:justify-center mt-10 flex-col min-h-screen"
+          "flex items-center md:justify-center py-10 flex-col min-h-full"
         }
       >
         <header className="">
@@ -61,6 +61,19 @@ export default function Home() {
             </div>
           )}
         </div>
+        <footer className="mt-auto">
+          <p className="text-xs italic text-center font-light">
+            Made by{" "}
+            <a
+              href="https://links.montoulieu.dev"
+              target="_blank"
+              rel="noreferrer"
+              className="underline"
+            >
+              Pieter Montoulieu
+            </a>
+          </p>
+        </footer>
       </div>
     </>
   );
