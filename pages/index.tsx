@@ -23,7 +23,11 @@ export default function Home() {
           content="A tool to generate random music genres."
         />
       </Head>
-      <div className={"flex items-center mt-10 flex-col min-h-screen"}>
+      <div
+        className={
+          "flex items-center md:justify-center mt-10 flex-col min-h-screen"
+        }
+      >
         <header className="">
           <h1 className="text-4xl font-black text-center mb-1">
             -Music-Kebab-
