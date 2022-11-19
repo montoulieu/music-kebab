@@ -1103,7 +1103,6 @@ const genres = [
   "Grindcore",
   "Hardcore punk",
   "Horror punk",
-  "Nazi punk",
   "Oi!",
   "Pop punk",
   "Psychobilly",
