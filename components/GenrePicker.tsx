@@ -10,7 +10,7 @@ export default function GenrePicker({ index }: { index: number }) {
   return (
     <div
       className={
-        "genre text-center border-2 border-dotted bg-white dark:bg-black border-gray-500 dark:border-gray-500 rounded-2xl shadow-md p-5"
+        "genre text-center border-2 border-dotted bg-white dark:bg-black border-gray-500 dark:border-gray-500 rounded-2xl shadow-md p-5 w-full md:w-auto"
       }
     >
       <div className="label mb-4">

@@ -16,20 +16,21 @@ const ButtonBar = () => {
         className="hover:bg-yellow-300 dark:hover:bg-yellow-500"
         onClick={generateThreeGenres}
       >
-        <SyncIcon className="-translate-y-0.5 mr-2" /> Randomize
+        <SyncIcon className="-translate-y-0.5 mr-2" /> Shuffle
       </button>
       <button
         className="hover:bg-blue-300 dark:hover:bg-blue-500"
         onClick={copyGenres}
       >
-        <CopyIcon className="-translate-y-0.5 mr-2" /> Copy Genres
+        <CopyIcon className="-translate-y-0.5 mr-2" /> Copy
       </button>
       <button
         className="hover:bg-lime-300 dark:hover:bg-lime-500"
         onClick={addGenre}
         disabled={pickedGenres.length >= 8}
       >
-        <PlusIcon className="-translate-y-0.5 mr-2" /> Add Genre
+        <PlusIcon className="-translate-y-0.5 mr-2" />
+        Add
       </button>
     </div>
   );
