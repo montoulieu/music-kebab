@@ -1,0 +1,9 @@
+{
+  "background_color": "black",
+  "description": "A tool to generate random music genres.",
+  "display": "fullscreen",
+  "icons": [],
+  "name": "Music Kebab",
+  "short_name": "Music Kebab",
+  "start_url": "/"
+}

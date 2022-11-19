@@ -22,6 +22,9 @@ export default function Home() {
           name="description"
           content="A tool to generate random music genres."
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <link rel="manifest" href="/manifest.json" />
       </Head>
       <div
         className={
