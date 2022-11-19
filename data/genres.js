@@ -884,7 +884,7 @@ const genres = [
   "Avant-garde jazz",
   "Bebop",
   "Boogie-woogie",
-  "Bossa nova",
+  "Bossa-nova",
   "Brazilian Jazz",
   "British dance band",
   "Cape jazz",
