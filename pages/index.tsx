@@ -1,6 +1,6 @@
 import GenrePicker from "../components/GenrePicker";
 import { ReactSortable } from "react-sortablejs";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import useGenreData from "../hooks/useGenreData";
 import ButtonBar from "../components/ButtonBar";
 
@@ -10,6 +10,7 @@ export default function Home() {
 
   useEffect(() => {
     generateThreeGenres();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
