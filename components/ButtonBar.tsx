@@ -6,7 +6,8 @@ const ButtonBar = () => {
   const { addGenre, generateThreeGenres, pickedGenres } = useGenreData();
 
   const copyGenres = () => {
-    navigator.clipboard.writeText(pickedGenres.join(" "));
+    const genres = pickedGenres.map((genre) => genre.name);
+    navigator.clipboard.writeText(genres.join(" "));
   };
 
   return (
@@ -26,6 +27,7 @@ const ButtonBar = () => {
       <button
         className="hover:bg-lime-300 dark:hover:bg-lime-500"
         onClick={addGenre}
+        disabled={pickedGenres.length >= 6}
       >
         <PlusIcon className="-translate-y-0.5 mr-2" /> Add Genre
       </button>

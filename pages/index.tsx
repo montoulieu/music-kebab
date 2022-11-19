@@ -25,7 +25,7 @@ export default function Home() {
         </p>
       </header>
 
-      <div className="lg:max-w-4xl">
+      <div className="lg:max-w-6xl">
         <ButtonBar />
 
         {pickedGenres.length > 0 ? (
@@ -35,11 +35,11 @@ export default function Home() {
             className="min-h-[20rem] flex items-start justify-center flex-col md:flex-row md:flex-wrap gap-5"
           >
             {pickedGenres.map((genre, index) => (
-              <GenrePicker key={genre} index={index} />
+              <GenrePicker key={genre.id} index={index} />
             ))}
           </ReactSortable>
         ) : (
-          <div className="text-center dark:text-white min-h-[10rem] flex items-center justify-center">
+          <div className="min-h-[20rem] text-center dark:text-white flex justify-center pt-10">
             <h1 className="text-3xl font-extrabold mb-4">No genres added...</h1>
           </div>
         )}

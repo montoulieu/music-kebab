@@ -1,11 +1,9 @@
 import genres from "../data/genres";
 import { useEffect, useState } from "react";
-import useGenreStore from "../store/useGenreStore";
+import { useGenreStore, GenreStore, Genre } from "../store/useGenreStore";
 
 const useGenreData = () => {
-  const pickedGenres = useGenreStore((state) => state.pickedGenres);
-  const setPickedGenres = useGenreStore((state) => state.setPickedGenres);
-  const setGenreIndex = useGenreStore((state) => state.setGenreIndex);
+  const { pickedGenres, setPickedGenres, setGenreIndex } = useGenreStore();
   const genreCount = pickedGenres.length;
 
   const pickRandomGenre = () => {
@@ -14,13 +12,17 @@ const useGenreData = () => {
 
   const generateThreeGenres = () => {
     setPickedGenres([]);
-    const genre = [pickRandomGenre(), pickRandomGenre(), pickRandomGenre()];
+    const genre = [
+      { id: 0, name: pickRandomGenre() },
+      { id: 1, name: pickRandomGenre() },
+      { id: 2, name: pickRandomGenre() },
+    ];
     setPickedGenres([...genre]);
   };
 
   const addGenre = () => {
     const genre = pickRandomGenre();
-    setPickedGenres([...pickedGenres, genre]);
+    setPickedGenres([...pickedGenres, { id: genreCount, name: genre }]);
   };
 
   const swapGenre = (index: number) => {

@@ -2,12 +2,13 @@ import styles from "../styles/Home.module.css";
 import { useEffect, useState } from "react";
 import useGenreData from "../hooks/useGenreData";
 import { TrashIcon, SyncIcon } from "@primer/octicons-react";
+import { Genre } from "../store/useGenreStore";
 
 export default function GenrePicker({
   genre,
   index,
 }: {
-  genre: string;
+  genre: Genre;
   index: number;
 }) {
   const { pickedGenres, removeGenre, swapGenre } = useGenreData();
@@ -19,7 +20,9 @@ export default function GenrePicker({
       }
     >
       <div className="label mb-4">
-        <h1 className="text-3xl font-extrabold">{pickedGenres[index]}</h1>
+        <h1 className="text-3xl font-extrabold select-none">
+          {pickedGenres[index].name}
+        </h1>
       </div>
 
       <div className="flex">
