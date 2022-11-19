@@ -27,7 +27,7 @@ const ButtonBar = () => {
       <button
         className="hover:bg-lime-300 dark:hover:bg-lime-500"
         onClick={addGenre}
-        disabled={pickedGenres.length >= 6}
+        disabled={pickedGenres.length >= 8}
       >
         <PlusIcon className="-translate-y-0.5 mr-2" /> Add Genre
       </button>
