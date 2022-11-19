@@ -23,7 +23,7 @@ export default function Home() {
           content="A tool to generate random music genres."
         />
       </Head>
-      <div className={"flex items-center justify-center flex-col min-h-screen"}>
+      <div className={"flex items-center mt-10 flex-col min-h-screen"}>
         <header className="">
           <h1 className="text-4xl font-black text-center mb-1">
             -Music-Kebab-
@@ -43,7 +43,7 @@ export default function Home() {
             <ReactSortable
               list={pickedGenres}
               setList={setPickedGenres}
-              className="min-h-[20rem] flex items-start justify-center flex-col md:flex-row md:flex-wrap gap-5"
+              className="min-h-[20rem] flex items-start md:justify-center flex-col md:flex-row md:flex-wrap gap-5"
             >
               {pickedGenres.map((genre, index) => (
                 <GenrePicker key={genre.name} index={index} />
