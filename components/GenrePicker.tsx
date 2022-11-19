@@ -4,13 +4,7 @@ import useGenreData from "../hooks/useGenreData";
 import { TrashIcon, SyncIcon } from "@primer/octicons-react";
 import { Genre } from "../store/useGenreStore";
 
-export default function GenrePicker({
-  genre,
-  index,
-}: {
-  genre: Genre;
-  index: number;
-}) {
+export default function GenrePicker({ index }: { index: number }) {
   const { pickedGenres, removeGenre, swapGenre } = useGenreData();
 
   return (
