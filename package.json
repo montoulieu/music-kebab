@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@primer/octicons-react": "^17.9.0",
+    "@shopify/draggable": "^1.0.0-beta.8",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
@@ -17,6 +19,15 @@
     "next": "13.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "4.9.3"
+    "react-sortablejs": "^6.1.4",
+    "sortablejs": "^1.15.0",
+    "typescript": "4.9.3",
+    "zustand": "^4.1.4"
+  },
+  "devDependencies": {
+    "@types/sortablejs": "^1.15.0",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.19",
+    "tailwindcss": "^3.2.4"
   }
 }
