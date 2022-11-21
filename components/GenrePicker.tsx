@@ -1,11 +1,16 @@
 import styles from "../styles/Home.module.css";
 import { useEffect, useState } from "react";
 import useGenreData from "../hooks/useGenreData";
-import { TrashIcon, SyncIcon } from "@primer/octicons-react";
+import { TrashIcon, SyncIcon, SearchIcon } from "@primer/octicons-react";
 import { Genre } from "../store/useGenreStore";
 
 export default function GenrePicker({ index }: { index: number }) {
   const { pickedGenres, removeGenre, swapGenre } = useGenreData();
+
+  const searchGenre = () => {
+    const wikiSearch = `https://en.wikipedia.org/wiki/Special:Search?search=${pickedGenres[index].name}`;
+    window.open(wikiSearch, "_blank");
+  };
 
   return (
     <div
@@ -19,18 +24,27 @@ export default function GenrePicker({ index }: { index: number }) {
         </h1>
       </div>
 
-      <div className="flex">
+      <div className="flex items-center justify-center">
         <button
-          className="mx-auto flex items-center mr-2 hover:bg-green-300 dark:hover:bg-green-500"
+          className="flex items-center mr-2 hover:bg-green-500 dark:hover:bg-green-600"
           onClick={() => swapGenre(index)}
         >
-          <SyncIcon className="mr-2" /> Swap
+          <SyncIcon className="" />
+          {/* Swap */}
         </button>
         <button
-          className="mx-auto flex items-center hover:bg-red-300 dark:hover:bg-red-500 "
+          className="flex items-center mr-2 hover:bg-red-500 dark:hover:bg-red-600 "
           onClick={() => removeGenre(index)}
         >
-          <TrashIcon className="mr-2" /> Remove
+          <TrashIcon className="" />
+          {/* Remove */}
+        </button>
+        <button
+          className="flex items-center hover:bg-blue-500 dark:hover:bg-blue-600 "
+          onClick={searchGenre}
+        >
+          <SearchIcon className="" />
+          {/* Remove */}
         </button>
       </div>
     </div>
