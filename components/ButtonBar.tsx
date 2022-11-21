@@ -18,12 +18,14 @@ const ButtonBar = () => {
       >
         <SyncIcon className="-translate-y-0.5 mr-2" /> Shuffle
       </button>
+
       <button
         className="hover:bg-blue-500 dark:hover:bg-blue-600"
         onClick={copyGenres}
       >
         <CopyIcon className="-translate-y-0.5 mr-2" /> Copy
       </button>
+
       <button
         className="hover:bg-green-500 dark:hover:bg-green-600"
         onClick={addGenre}
